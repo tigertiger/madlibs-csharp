@@ -2,17 +2,48 @@
 <html>
   <head>
     <meta charset='utf-8'>
-    <title>Create a Custom Postcard!</title>
+    <title>Madlib: 1</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  
   </head>
   <body>
-    <h1>Fill in your name and your friend's name to create your custom postcard!</h1>
-    <form action="/postcard" method="post">
-    <label for="sender">Sender's Name</label>
-    <input id="sender" name="sender" type="text">
-    <label for="recipient">Recipient's Name</label>
-    <input id="recipient" name="recipient" type="text">
+  <div class="container">
+    <h1>Fill in the blanks to create a fun *mystery* story!</h1>
+    <form action="/yourmadlib" method="post">
+    <div class="form-inline">
+      <label for="spaceTeamName">Team Name</label>
+      <input id="spaceTeamName" class="form-control" name="spaceTeamName" type="text">
+    </div>
+    <div class="form-inline">
+      <label for="adverbOne">Adverb</label>
+      <input id="adverbOne" class="form-control" name="adverbOne" type="text">
+    </div>
+    <div class="form-inline">
+      <label for="pluralNounOne">Plural Noun</label>
+      <input id="pluralNounOne" class="form-control" name="pluralNounOne" type="text">
+    </div>
+    <div class="form-inline">
+      <label for="adverbTwo">Adverb</label>
+      <input id="adverbTwo" name="adverbTwo" type="text">
+    </div>
+    <label for="adjectiveOne">Adjective</label>
+    <input id="adjectiveOne" name="adjectiveOne" type="text">
+    <label for="pluralNounTwo">Plural Noun</label>
+    <input id="pluralNounTwo" name="pluralNounTwo" type="text">
+    <label for="adjectiveTwo">Adjective</label>
+    <input id="adjectiveTwo" name="adjectiveTwo" type="text">
+    <label for="verbOne">Verb</label>
+    <input id="verbOne" name="verbOne" type="text">
+    <label for="nounFormVerb">Noun Form Verb [ex. hesitation, madness, delight]</label>
+    <input id="nounFormVerb" name="nounFormVerb" type="text">
+    <label for="adjectiveThree">Adjective</label>
+    <input id="adjectiveThree" name="adjectiveThree" type="text">
+    <label for="pluralNounThree">Plural Noun</label>
+    <input id="pluralNounThree" name="pluralNounThree" type="text">
+    <label for="fakeDogCountry">Country Name</label>
+    <input id="fakeDogCountry" name="fakeDogCountry" type="text">
     <button type="submit">Go!</button>
     </form>
+  </div>
   </body>
 </html>
