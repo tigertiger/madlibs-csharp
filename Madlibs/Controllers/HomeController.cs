@@ -34,7 +34,7 @@ namespace Madlibs.Controllers
     }
 
     [Route("/yourmadlib2")]
-    public ActionResult YourMadlib2(string dayOfWeek, string name, string carModel, string weatherAdjective, string emotion, string nounOne, string nounTwo, string verbOne, string adjectiveOne, string nounThree, string verbTwo, string adverb, string adjectiveTwo, string ingVerb, string nounFour)
+    public ActionResult YourMadlib2(string dayOfWeek, string name, string carModel, string weatherAdjective, string emotion, string nounOne, string nounTwo, string pastTenseVerb, string adjectiveOne, string nounThree, string verbTwo, string adverb, string adjectiveTwo, string ingVerb, string nounFour)
     {
       MadlibsVariable myMadlibsVariable = new MadlibsVariable();
       myMadlibsVariable.DayOfWeek = dayOfWeek;
@@ -44,7 +44,7 @@ namespace Madlibs.Controllers
       myMadlibsVariable.Emotion = emotion;
       myMadlibsVariable.NounOne = nounOne;
       myMadlibsVariable.NounTwo = nounTwo;
-      myMadlibsVariable.VerbOne = verbOne;
+      myMadlibsVariable.PastTenseVerb = pastTenseVerb;
       myMadlibsVariable.AdjectiveOne = adjectiveOne;
       myMadlibsVariable.NounThree = nounThree;
       myMadlibsVariable.VerbTwo = verbTwo;

@@ -3,17 +3,43 @@
 <head>
   <title>Your Madlib</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
 </head>
 <body>
+<style>
+body {
+  font-family: 'Dosis', sans-serif;
+  background: rgb(255,255,255);
+  background: radial-gradient(circle, rgba(255,255,255,1) 24%, rgba(0,117,255,1) 100%);
+}
+  .homeButton {
+    float:right;
+  }
+</style>
   <div class="container">
     <h1>Honk if You're...</h1>
     <p>On @Model.DayOfWeek, @Model.Name went out on a drive in their @Model.CarModel.</p>
     <p>It was @Model.WeatherAdjective, and @Model.Name was feeling @Model.Emotion.</p>
-    <p>But then, at the corner of @Model.NounOne and @Model.NounTwo, @Model.Name saw a sign in someone's driveway that said: "Honk if you're @Model.AdjectiveOne!!"</p>
+    <p>But then, at the corner of <span id="streetOne"></span> Street and <span id="streetTwo"></span> Avenue, @Model.Name saw a sign in someone's driveway that said: "Honk if you're @Model.AdjectiveOne!!"</p>
     <p>This threw @Model.Name into a complete emotional @Model.NounThree spiral.</p>
-    <p>@Model.Name got out of the car and @Model.VerbOne @Model.Adverb.</p>
-    <p>The owner of the sign heard @Model.Name and went absolutely @Model.AdjectiveTwo, @Model.IngVerbOne all over the sidewalk.</p>
+    <p>@Model.Name got out of the car and @Model.PastTenseVerb @Model.Adverb.</p>
+    <p>The owner of the sign heard @Model.Name and went absolutely @Model.AdjectiveTwo, @Model.IngVerb all over the sidewalk.</p>
     <p>It was one @Model.NounFour of a day!</p>
+    <div class="homeButton">
+    <a href="/"><button class="btn btn-primary">Back Home</button></a>
+    </div>
   </div>
+  <script>
+    $(document).ready(function() {
+    let upperOne = ("@Model.NounOne").charAt(0).toUpperCase() + ("@Model.NounOne").slice(1);
+    $("#streetOne").html(upperOne);
+
+    let upperTwo = ("@Model.NounTwo").charAt(0).toUpperCase() + ("@Model.NounTwo").slice(1);
+    $("#streetTwo").html(upperTwo);
+    });
+  </script>
 </body>
 </html>

@@ -4,44 +4,97 @@
     <meta charset='utf-8'>
     <title>Madlib: 2</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="/Madlibs/Assets/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
   </head>
   <body>
+  <style>
+  body {
+    font-family: 'Dosis', sans-serif;
+    background: rgb(34,193,195);
+    background: radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(255,255,255,1) 59%);
+  }
+  .form-inline {
+    margin-bottom: 12px;
+  }
+  .form-control {
+    margin-left: 8px ;
+
+  }
+    .homeButton {
+    float:right;
+  }
+  </style>
   <div class="container">
     <h1>Fill in the blanks to create a fun story!</h1>
     <form action="/yourmadlib2" method="post">
+  <div class="form-inline">
     <label for="dayOfWeek">Day of the Week</label>
-    <input id="dayOfWeek" name="dayOfWeek" type="text">
+    <input id="dayOfWeek" class="form-control"name="dayOfWeek" type="text">
+  </div>
+  <div class="form-inline">
     <label for="name">Person's Name</label>
-    <input id="name" name="name" type="text">
+    <input id="name" class="form-control"name="name" type="text">
+  </div>
+  <div class="form-inline">
     <label for="carModel">Type of Car</label>
-    <input id="carModel" name="carModel" type="text">
+    <input id="carModel" class="form-control"name="carModel" type="text">
+  </div>
+  <div class="form-inline">
     <label for="weatherAdjective">Weather Adjective</label>
-    <input id="weatherAdjective" name="weatherAdjective" type="text">
+    <input id="weatherAdjective" class="form-control"name="weatherAdjective" type="text">
+  </div>
+  <div class="form-inline">
     <label for="emotion">Emotion</label>
-    <input id="emotion" name="emotion" type="text">
+    <input id="emotion" class="form-control"name="emotion" type="text">
+  </div>
+  <div class="form-inline">
     <label for="nounOne">Noun</label>
-    <input id="nounOne" name="nounOne" type="text">
+    <input id="nounOne" class="form-control"name="nounOne" type="text">
+  </div>
+  <div class="form-inline">
     <label for="nounTwo">Noun</label>
-    <input id="nounTwo" name="nounTwo" type="text">
-    <label for="verbOne">Verb</label>
-    <input id="verbOne" name="verbOne" type="text">
+    <input id="nounTwo" class="form-control"name="nounTwo" type="text">
+  </div>
+  <div class="form-inline">
+    <label for="pastTenseVerb">Past Tense Verb</label>
+    <input id="pastTenseVerb" class="form-control"name="pastTenseVerb" type="text">
+  </div>
+  <div class="form-inline">
     <label for="adjectiveOne">Adjective</label>
-    <input id="adjectiveOne" name="adjectiveOne" type="text">
+    <input id="adjectiveOne" class="form-control"name="adjectiveOne" type="text">
+  </div>
+  <div class="form-inline">
     <label for="nounThree">Noun</label>
-    <input id="nounThree" name="nounThree" type="text">
+    <input id="nounThree" class="form-control"name="nounThree" type="text">
+  </div>
+  <div class="form-inline">
     <label for="verbTwo">Verb</label>
-    <input id="verbTwo" name="verbTwo" type="text">
+    <input id="verbTwo" class="form-control"name="verbTwo" type="text">
+  </div>
+  <div class="form-inline">
     <label for="adverb">Adverb</label>
-    <input id="adverb" name="adverb" type="text">
+    <input id="adverb" class="form-control"name="adverb" type="text">
+  </div>
+  <div class="form-inline">
     <label for="adjectiveTwo">Adjective</label>
-    <input id="adjectiveTwo" name="adjectiveTwo" type="text">
+    <input id="adjectiveTwo" class="form-control"name="adjectiveTwo" type="text">
+  </div>
+  <div class="form-inline">
     <label for="ingVerb">Verb Ending in -ing</label>
-    <input id="ingVerb" name="ingVerb" type="text">
+    <input id="ingVerb" class="form-control"name="ingVerb" type="text">
+  </div>
+  <div class="form-inline">
     <label for="nounFour">Noun</label>
-    <input id="nounFour" name="nounFour" type="text">
-    <button type="submit">Go!</button>
+    <input id="nounFour" class="form-control"name="nounFour" type="text">
+  </div>
+
+    <button class="btn btn-primary"type="submit">Go!</button>
     </form>
+        <div class="homeButton">
+    <a href="/"><button class="btn btn-primary">Back Home</button></a>
+    </div>
   </div>
   </body>
 </html>

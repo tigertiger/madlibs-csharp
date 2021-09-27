@@ -3,11 +3,21 @@
 <head>
   <title>Your Madlib</title>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-@section Styles {
-  
-}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
 </head>
 <body>
+<style>
+  body {
+  font-family: 'Dosis', sans-serif;
+  background: rgb(255,255,255);
+  background: radial-gradient(circle, rgba(255,255,255,1) 24%, rgba(0,117,255,1) 100%);
+  }
+  .homeButton {
+    float:right;
+  }
+</style>
   <div class="container">
     <h1>Dogs in Space!!!</h1>
     <p>Dear @Model.SpaceTeamName,</p>
@@ -17,6 +27,9 @@
     <p>Should you encounter any of these @Model.AdjectiveTwo ETs, your directive is to @Model.VerbOne, with no @Model.NounFormVerb.</p>
     <p>One last thing @Model.SpaceTeamName, we forgot to mention that a return flight will not be possible due to budget cuts sent down from our @Model.AdjectiveThree Boss. This may alarm you, but to make up for the slight error, we have packed extra @Model.PluralNounThree in the cargo section.</p>
     <p>All hail @Model.FakeDogCountry!</p>
+    <div class="homeButton">
+    <a href="/"><button class="btn btn-primary">Back Home</button></a>
+    </div>
   </div>
 </body>
 </html>

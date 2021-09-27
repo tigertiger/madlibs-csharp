@@ -26,5 +26,6 @@ namespace Madlibs.Models
     public string NounTwo { get; set; }
     public string NounThree { get; set; }
     public string VerbTwo { get; set; }
+    public string PastTenseVerb { get; set; }
   }
 }
